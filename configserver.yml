@@ -1,5 +1,5 @@
 info:
-  component: Config Server
+  component: Config Server (Remote Properties)
 spring:
   application:
     name: configserver
