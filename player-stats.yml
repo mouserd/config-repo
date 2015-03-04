@@ -1,5 +1,5 @@
 info:
-  component: Player Stats (Local Properties)
+  component: Player Stats (Remote Properties)
   
 server:
   port: 8081
