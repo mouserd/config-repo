@@ -1,28 +1,13 @@
+info:
+  component: Config Server
 spring:
   application:
-    name: eureka-config-server
+    name: configserver
   cloud:
     config:
-      enabled: true
-      username: user
-      password: user
+      server:
+        git:
+          uri: https://github.com/mouserd/config-repo
+
 server:
-  port: 8761
-
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 10
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-  server:
-    waitTimeInMsWhenSyncEmpty: 0
-
-logging:
-  level:
-    com.netflix: 'WARN'
-    org.springframework.cloud: 'WARN'
-
-endpoints:
-  health:
-    sensitive: false
+  port: 8888
