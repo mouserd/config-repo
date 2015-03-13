@@ -13,7 +13,7 @@ spring:
     hibernate:
       ddl-auto: create
   datasource:
-    url: jdbc:mysql://localhost/player-service
+    url: ${DATASOURCE_URL:jdbc:mysql://localhost/player-service}
     username: player-service
     password: abc123
     driver-class-name: com.mysql.jdbc.Driver
