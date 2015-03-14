@@ -1,6 +1,9 @@
 info:
   component: Players (Remote Properties)
   
+server:
+  port: ${PORT:8080}
+  
 eureka:
   client:
     serviceUrl:
