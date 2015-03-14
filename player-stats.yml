@@ -17,7 +17,7 @@ spring:
       ddl-auto: create-drop
       #naming_strategy: org.hibernate.cfg.EJB3NamingStrategy #Camel-case JPA naming
   datasource:
-    url: jdbc:mysql://localhost/player-stats-service
+    url: ${DATASOURCE_URL:jdbc:mysql://localhost/player-stats-service}
     username: playerstats_user
     password: abc123
     driver-class-name: com.mysql.jdbc.Driver
