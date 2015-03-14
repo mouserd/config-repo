@@ -2,7 +2,7 @@ info:
   component: Player Stats (Remote Properties)
   
 server:
-  port: 8081
+  port: ${PORT:8081}
 
 eureka:
   client:
